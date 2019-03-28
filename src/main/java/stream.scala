@@ -25,7 +25,7 @@ object stream {
     // Get rid of log spam (should be called after the context is set up)
     setupLogging()
 
-    //stream RDD with tweets written at english
+    //stream RDD with tweets written in english
     //and have followers
     //and are not protected, so I can request their followers
     val tweet = TwitterUtils.createStream(ssc, None)
